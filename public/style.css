@@ -25,3 +25,108 @@
   border-radius: 5px; /* Làm tròn các góc */
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Hiệu ứng chuyển tiếp mượt mà */
 }
+
+/*css cho main */
+.img-background{
+  height: 100vh;
+  width: 100%;
+}
+.img-background-mobile{
+  height: 100vh;
+  width: 100%;
+  display: none;
+}
+.my-infor{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(255, 255, 255, 0.6); /* Sử dụng rgba để chỉ làm mờ nền */
+  padding: 135px 170px 90px;
+  border-radius: 65px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+
+}
+
+.img-avatar {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  border: 0px solid;
+  top: -55px;
+  position: relative;
+
+}
+
+.my-major {
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  position: relative;
+  top: -35px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease; /* Thêm hiệu ứng chuyển tiếp mượt mà */
+}
+
+.my-major:hover {
+  border-bottom: 2px solid white; /* Khi hover, border-bottom sẽ hiển thị */
+}
+.my-major h2:hover{
+  cursor: pointer;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+  
+}
+.my-contact{
+  display: flex;
+  justify-content: space-between;
+}
+.my-contact a{
+  color: white;
+  font-size: 40px;
+  padding: 0px 25px;
+  cursor: pointer;
+  position: relative;
+}
+.my-contact a:hover{
+  transform: scale(1.4);
+  animation: animate 1s linear infinite;
+}
+.img-avatar:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s ease
+}
+/*reponsive cho mobile*/
+@media (max-width: 500px) {
+  .my-infor {
+    padding: 50px 70px;
+  }
+  .img-background-mobile{
+    display: block;
+  }
+  .img-background{
+    display: none;
+  }
+  .img-avatar {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: -35px;
+  }
+  .my-contact a{
+    font-size: 30px;
+    padding: 0px 15px;
+  }
+}

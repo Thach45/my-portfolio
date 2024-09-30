@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5500;
 
 // Thiết lập Pug làm template engine
 app.set('views', path.join(__dirname, '../views'));
