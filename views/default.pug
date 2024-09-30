@@ -1,0 +1,35 @@
+doctype html 
+html 
+    head 
+        title My-Portfolio
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css")
+    link(rel="stylesheet", href="style.css")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css")
+    body 
+        .header
+         nav.navbar.navbar-expand-lg.bg-body-tertiary
+            .container-fluid
+                a.navbar-brand(href='https://www.facebook.com/hoangthach.nguyen.5059') HoangThach
+                button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarSupportedContent.collapse.navbar-collapse
+                    ul.navbar-nav.me-5.mb-5.mb-lg-0
+                        li.nav-item
+                         a.nav-link.active(aria-current='page' href='#') Home
+                        li.nav-item
+                         a.nav-link(href='#') Projects
+                        li.nav-item
+                         a.nav-link(href="#") Blog
+                    .col-md-7
+                    form.d-flex(role='search')
+                        input.form-control.me-2(type='search' placeholder='Search' aria-label='Search' name='search')
+                        button.btn.btn-outline-success(type='submit') Search
+
+        .body 
+            .main
+              block main
+        .footer
+
+    script(src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js")
+    script(src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js")
+    script(src="/script.js")
