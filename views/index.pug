@@ -1,15 +1,48 @@
 extend default.pug
 
 block main
-  h1.text-center.my-infor
-    img.img-avatar(src="img/anh2.png")
-    div.my-major
-      h2 Back-end Developer 👨‍💻
-    div.my-contact
-      a.bi.bi-facebook(href="https://www.facebook.com/hoangthach.nguyen.5059")
-      a.bi.bi-telephone(href="tel: 0372278818")
-      a.bi.bi-github(href="https://github.com/Thach45")
-      a.bi.bi-linkedin
-      a.bi.bi-instagram
-  img.img-background(src="img/anh1.gif")
-  img.img-background-mobile(src="img/anh_mobile.jpeg")
+  div.main-contact
+    h1.text-center.my-infor
+      img.img-avatar(src="img/anh2.png")
+      div.my-major
+        h2 Back-end Developer 👨‍💻
+      div.my-contact
+        a.bi.bi-facebook(href="https://www.facebook.com/hoangthach.nguyen.5059")
+        a.bi.bi-telephone(href="tel: 0372278818")
+        a.bi.bi-github(href="https://github.com/Thach45")
+        a.bi.bi-linkedin
+        a.bi.bi-instagram
+    img.img-background(src="img/anh1.gif")
+    img.img-background-mobile(src="img/anh_mobile.jpeg")
+  div.main-project
+   h1.text-center.my-project My Projects
+    div.list-project
+      div.project
+        img.img-project.img-thumbnail(src="img/anh-project1.png")
+        h4.name-project Website Selling Phones
+        h5.description-project A website selling phones with the function of adding to cart, buying, and managing products.
+        h5.technology-project
+          p.btn.btn-danger NodeJS
+          p.btn.btn-danger ExpressJS
+          p.btn.btn-danger MongoDB
+          a.to-project.bi.bi-arrow-right-circle(href="https://project01-61fksgqny-thachs-projects-145026ff.vercel.app/")
+      
+      div.project
+        img.img-project.img-thumbnail(src="img/anh-project2.png")
+        h4.name-project Algorithm Simulation
+        h5.description-project A website simulating the algorithm sort
+        h5.technology-project
+          p.btn.btn-danger JavaScript
+          p.btn.btn-danger HTML
+          p.btn.btn-danger Css
+          a.to-project.bi.bi-arrow-right-circle(href="https://thach45.github.io/doAnDSA/")
+      div.project
+        img.img-project.img-thumbnail(src="img/anh-project1.png")
+        h4.name-project Website Selling Phones
+        h5.description-project A website selling phones with the function of adding to cart, buying, and managing products.
+        h5.technology-project
+          p.btn.btn-danger NodeJS
+          p.btn.btn-danger ExpressJS
+          p.btn.btn-danger MongoDB
+          a.to-project.bi.bi-arrow-right-circle(href="https://www.facebook.com/hoangthach.nguyen.5059")
+      

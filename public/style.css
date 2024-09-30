@@ -1,48 +1,58 @@
-
 /* style.css */
 .nav-link:hover {
   background-color: #28a745;
   color: white;
-  border-radius: 5px; /* Làm tròn các góc */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Hiệu ứng chuyển tiếp mượt mà */
+  border-radius: 5px;
+  /* Làm tròn các góc */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* Hiệu ứng chuyển tiếp mượt mà */
 }
 
 .navbar-brand:hover {
   background-color: #28a745;
   color: white;
-  border-radius: 5px; /* Làm tròn các góc */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Hiệu ứng chuyển tiếp mượt mà */
+  border-radius: 5px;
+  /* Làm tròn các góc */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* Hiệu ứng chuyển tiếp mượt mà */
 }
+
 .nav-item {
   margin-right: 15px;
   font-size: 20px;
 
 }
+
 .btn-outline-success:hover {
   background-color: #28a745;
   color: white;
   border-color: #28a745;
-  border-radius: 5px; /* Làm tròn các góc */
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Hiệu ứng chuyển tiếp mượt mà */
+  border-radius: 5px;
+  /* Làm tròn các góc */
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  /* Hiệu ứng chuyển tiếp mượt mà */
 }
 
 /*css cho main */
-.img-background{
+.img-background {
   height: 100vh;
   width: 100%;
 }
-.img-background-mobile{
+
+.img-background-mobile {
   height: 100vh;
   width: 100%;
   display: none;
 }
-.my-infor{
+
+.my-infor {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  background-color: rgba(255, 255, 255, 0.6); /* Sử dụng rgba để chỉ làm mờ nền */
+  background-color: rgba(255, 255, 255, 0.6);
+  /* Sử dụng rgba để chỉ làm mờ nền */
   padding: 135px 170px 90px;
   border-radius: 65px;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
@@ -67,13 +77,16 @@
   position: relative;
   top: -35px;
   border-bottom: 2px solid transparent;
-  transition: border-bottom 0.3s ease; /* Thêm hiệu ứng chuyển tiếp mượt mà */
+  transition: border-bottom 0.3s ease;
+  /* Thêm hiệu ứng chuyển tiếp mượt mà */
 }
 
 .my-major:hover {
-  border-bottom: 2px solid white; /* Khi hover, border-bottom sẽ hiển thị */
+  border-bottom: 2px solid white;
+  /* Khi hover, border-bottom sẽ hiển thị */
 }
-.my-major h2:hover{
+
+.my-major h2:hover {
   cursor: pointer;
 }
 
@@ -81,52 +94,162 @@
   0% {
     transform: translateY(-10px);
   }
+
   50% {
     transform: translateY(10px);
   }
+
   100% {
     transform: translateY(-10px);
   }
-  
+
 }
-.my-contact{
+
+.my-contact {
   display: flex;
   justify-content: space-between;
 }
-.my-contact a{
+
+.my-contact a {
   color: white;
   font-size: 40px;
   padding: 0px 25px;
   cursor: pointer;
   position: relative;
 }
-.my-contact a:hover{
+
+.my-contact a:hover {
   transform: scale(1.4);
   animation: animate 1s linear infinite;
 }
-.img-avatar:hover{
+
+.img-avatar:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease
 }
+
+
+/*css cho các project*/
+.my-project {
+  height: 300px;
+  width: 100%;
+  top: 40px;
+  color: rgb(4, 90, 90);
+  position: relative;
+}
+
+.main-project {
+  height: 300px;
+  width: 100%;
+}
+.name-project {
+  padding: 10px 35px;
+  text-align: left;
+  font-size: 20px;
+  color: rgb(4, 90, 90);
+}
+
+.description-project {
+  font-size: 13px;
+  text-align: left;
+  padding: 0px 35px;
+  color: rgb(1, 20, 20);
+  min-height: 50px;
+}
+
+.btn {
+  margin: 0px 10px;
+  font-size: 10px;
+  border-radius: 20px;
+}
+
+.technology-project {
+  text-align: end;
+  padding: 15px 10px 10px 10px;
+}
+.img-thumbnail{
+  border-radius: 15px;
+}
+
+.list-project {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px;
+}
+
+.project {
+  display: inline-block;
+  background-color: #f8f9fa;
+  border: 2px solid #dee2e6;
+  border-radius: 20px;
+  margin: 20px;
+  position: relative;
+}
+.to-project{
+  display: none;
+}
+.project:hover {
+  background-color: rgba(148, 95, 241, 0.3);
+  color: white;
+  border-color: #6c0db0;
+  
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+.project:hover .to-project{
+  display: block;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  font-size: 55px;
+  transform: translate(-50%, -100%);;
+  animation: animateToProject 1s linear ;
+}
+@keyframes animateToProject {
+  0% {
+    transform: translate(-50%, -100%);;
+  }
+
+  40% {
+    transform: translate(-50%, -50%);;
+  }
+  60% {
+    transform: translate(-50%, 0%);;
+  }
+  80% {
+    transform: translate(-50%, -50%);;
+  }
+  100% {
+    transform: translate(-50%, -100%);;
+  }
+
+}
+
 /*reponsive cho mobile*/
 @media (max-width: 500px) {
   .my-infor {
     padding: 50px 70px;
   }
-  .img-background-mobile{
+
+  .img-background-mobile {
     display: block;
   }
-  .img-background{
+
+  .img-background {
     display: none;
   }
+
   .img-avatar {
     width: 100px;
     height: 100px;
     position: relative;
     top: -35px;
   }
-  .my-contact a{
+
+  .my-contact a {
     font-size: 30px;
     padding: 0px 15px;
+  }
+  .list-project {
+    display: block;
   }
 }
