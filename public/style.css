@@ -225,9 +225,9 @@
 }
 
 /*reponsive cho mobile*/
-@media (max-width: 500px) {
+@media (max-width: 760px) {
   .my-infor {
-    padding: 50px 70px;
+    padding: 45px 45px;
   }
 
   .img-background-mobile {
@@ -248,6 +248,9 @@
   .my-contact a {
     font-size: 30px;
     padding: 0px 15px;
+  }
+  .technology-project h2{
+    font-size: 1.8rem;
   }
   .list-project {
     display: block;
